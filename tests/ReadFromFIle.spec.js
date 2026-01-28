@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-const testdata = JSON.parse(JSON.stringify(require("../testdata.json")));
+const testdata = JSON.parse(JSON.stringify(require("./testdata.json")));
 
 test('reading data from JSON', async ({ page }) => {
   await page.goto("https://freelance-learn-automation.vercel.app/login");

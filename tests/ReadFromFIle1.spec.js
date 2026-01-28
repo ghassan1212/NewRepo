@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import fs from 'fs';
 
-const testdata = JSON.parse(fs.readFileSync("./testlogin.json", 'utf8'));
+const testdata = JSON.parse(fs.readFileSync("./tests/testlogin.json", 'utf8'));
 
 for (const data of testdata) {
     test.describe(`Login with users ${data.id}`, function () {
